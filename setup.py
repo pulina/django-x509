@@ -33,6 +33,6 @@ if __name__ == '__main__':  # ``import setup`` doesn't trigger setup().
         packages=['x509'],
         include_package_data=True,
         zip_safe=False,
-        install_requires=['setuptools>=1.1.6', 'flask', 'django-uuidfield',
-                          'pyOpenSSL']
+        install_requires=('setuptools', 'flask', 'django-uuidfield',
+                          'pyOpenSSL')
     )
