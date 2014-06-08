@@ -15,8 +15,7 @@ if __name__ == '__main__':  # ``import setup`` doesn't trigger setup().
     setup(
         name='django-x509',
         version=read_relative_file('VERSION').strip(),
-        description="Let you be behind a nginx configuration an get "
-                    "x509 auth credentials",
+        description="Let you be behind a nginx configuration an get x509 auth credentials",
         long_description=read_relative_file('README.rst'),
         classifiers=['Development Status :: 4 - Beta',
                      'Environment :: Web Environment',
@@ -33,6 +32,5 @@ if __name__ == '__main__':  # ``import setup`` doesn't trigger setup().
         packages=['x509'],
         include_package_data=True,
         zip_safe=False,
-        install_requires=('setuptools', 'flask', 'django-uuidfield',
-                          'pyOpenSSL')
+        install_requires=('setuptools', 'flask', 'django-uuidfield', 'pyOpenSSL')
     )
